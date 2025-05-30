@@ -1,4 +1,4 @@
-# Documentación del Tablero Streamlit para Análisis de Series Temporales con LSTM
+# Introducción a Series Temporales con LSTM
 
 ## Descripción General
 
