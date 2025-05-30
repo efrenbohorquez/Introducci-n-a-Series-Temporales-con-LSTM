@@ -7,6 +7,14 @@ import sys
 # Agregar directorio actual al path para importaciones
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+# Configuraciones de producción
+try:
+    from utils.production_config import setup_production_config, optimize_for_cloud
+    setup_production_config()
+    optimize_for_cloud()
+except ImportError:
+    pass  # En caso de que no esté disponible en desarrollo
+
 # Importar módulos
 from modules import intro, exploracion, preprocesamiento, analisis, modelado, resultados
 
